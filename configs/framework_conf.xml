@@ -25,5 +25,6 @@
 	
 	<module>
 		<name>gamepad_controller</name>
+		<config src="gamepad_controller.lconf" />
 	</module>
 </framework>
