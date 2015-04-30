@@ -1,0 +1,24 @@
+<framework>
+	<execution>
+		<maxThreadCount> 1 </maxThreadCount>
+		<clock enabled="true" unit="hz">100</clock>
+	</execution>
+	<modulesToLoad>
+		<module>ogre_window_manager</module>
+		<module>graphics_test</module>
+		<module>camera_renderer</module>
+	</modulesToLoad>
+	
+	<module>
+		<name>ogre_window_manager</name>
+		<config src="visualmanager.lconf" />
+	</module>
+	
+	<module>
+		<name>camera_renderer</name>
+	</module>
+	
+	<module>
+		<name>graphics_test</name>
+	</module>
+</framework>

@@ -1,0 +1,29 @@
+<framework>
+	<execution>
+		<maxThreadCount> 1 </maxThreadCount>
+		<clock enabled="true" unit="hz">100</clock>
+	</execution>
+	<modulesToLoad>
+		<module>ogre_window_manager</module>
+		<module>gamepad_controller</module>
+		<module>gamepad_visualizer</module>
+		<module>camera_renderer</module>
+	</modulesToLoad>
+	
+	<module>
+		<name>gamepad_visualizer</name>
+	</module>
+	
+	<module>
+		<name>ogre_window_manager</name>
+		<config src="visualmanager.lconf" />
+	</module>
+	
+	<module>
+		<name>camera_renderer</name>
+	</module>
+	
+	<module>
+		<name>gamepad_controller</name>
+	</module>
+</framework>
