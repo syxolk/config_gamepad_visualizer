@@ -1,0 +1,48 @@
+<framework>
+	<execution>
+		<maxThreadCount> 1 </maxThreadCount>
+		<clock enabled="true" unit="bla">100</clock>
+	</execution>
+	<modulesToEnable>
+		<module>ogre_window_manager</module>
+		<module>graphics_test</module>
+		<module>camera_renderer</module>
+		<module>graphics_test_2</module>
+		<module>camera_renderer_2</module>
+	</modulesToEnable>
+	
+	<module>
+		<name>ogre_window_manager</name>
+		<config src="visualmanager.lconf" />
+	</module>
+	
+	<module>
+		<name>camera_renderer</name>
+		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE" />
+		<config>
+			<window>GraphicsTest</window>
+		</config>
+	</module>
+	
+	<module>
+		<name>graphics_test</name>
+		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE" />
+	</module>
+	
+	<module>
+		<name>camera_renderer_2</name>
+		<libpath>camera_renderer</libpath>
+		<libname>camera_renderer</libname>
+		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE_2" />
+		<config>
+			<window>GraphicsTest_2</window>
+		</config>
+	</module>
+	
+	<module>
+		<name>graphics_test_2</name>
+		<libpath>graphics_test</libpath>
+		<libname>graphics_test</libname>
+		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE_2" />
+	</module>
+</framework>

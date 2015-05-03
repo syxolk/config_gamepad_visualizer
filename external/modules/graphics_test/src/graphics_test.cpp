@@ -6,7 +6,7 @@
 
 bool GraphicsTest::initialize() {
     imagePtr = datamanager()
-        ->writeChannel<lms::imaging::Image>(this, "CAMERA_IMAGE");
+        ->writeChannel<lms::imaging::Image>(this, "IMAGE");
 
     return true;
 }
