@@ -1,7 +1,8 @@
 <framework>
 	<execution>
 		<maxThreadCount> 1 </maxThreadCount>
-		<clock enabled="true" unit="bla">100</clock>
+		<clock enabled="true" unit="hz">100</clock>
+		<configMonitor>true</configMonitor>
 	</execution>
 	<modulesToEnable>
 		<module>ogre_window_manager</module>
@@ -27,6 +28,10 @@
 	<module>
 		<name>graphics_test</name>
 		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE" />
+		<config>
+			<width>1000</width>
+			<height>1000</height>
+		</config>
 	</module>
 	
 	<module>
@@ -44,5 +49,9 @@
 		<libpath>graphics_test</libpath>
 		<libname>graphics_test</libname>
 		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE_2" />
+		<config>
+			<width>500</width>
+			<height>500</height>
+		</config>
 	</module>
 </framework>

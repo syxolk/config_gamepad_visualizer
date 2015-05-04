@@ -12,6 +12,7 @@ public:
     bool cycle() override;
 private:
     lms::imaging::Image *imagePtr;
+    const lms::type::ModuleConfig *config;
 };
 
 #endif /* GRAPHICS_TEST_H */

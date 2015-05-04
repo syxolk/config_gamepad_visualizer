@@ -8,6 +8,8 @@ bool GraphicsTest::initialize() {
     imagePtr = datamanager()
         ->writeChannel<lms::imaging::Image>(this, "IMAGE");
 
+    config = getConfig();
+
     return true;
 }
 
@@ -16,7 +18,10 @@ bool GraphicsTest::deinitialize() {
 }
 
 bool GraphicsTest::cycle() {
-    imagePtr->resize(640, 480, lms::imaging::Format::BGRA);
+    int width = config->get<int>("width");
+    int height = config->get<int>("height");
+
+    imagePtr->resize(width, height, lms::imaging::Format::BGRA);
     imagePtr->fill(255);
 
     logger.time("predraw");
