@@ -13,9 +13,6 @@
 [submodule "external/modules/ogre_window_manager"]
 	path = external/modules/ogre_window_manager
 	url = https://github.com/Phibedy/ogre_window_manager.git
-[submodule "external/modules/camera_renderer"]
-	path = external/modules/camera_renderer
-	url = https://github.com/Phibedy/camera_renderer.git
 [submodule "external/modules/gamepad_controller"]
 	path = external/modules/gamepad_controller
 	url = https://github.com/Phibedy/gamepad_controller.git
