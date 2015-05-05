@@ -19,3 +19,6 @@
 [submodule "external/modules/gamepad_visualizer"]
 	path = external/modules/gamepad_visualizer
 	url = https://github.com/syxolk/gamepad_visualizer.git
+[submodule "external/modules/image_renderer"]
+	path = external/modules/image_renderer
+	url = https://github.com/Phibedy/image_renderer.git

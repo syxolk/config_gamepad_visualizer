@@ -7,9 +7,9 @@
 	<modulesToEnable>
 		<module>ogre_window_manager</module>
 		<module>graphics_test</module>
-		<module>camera_renderer</module>
+		<module>image_renderer</module>
 		<module>graphics_test_2</module>
-		<module>camera_renderer_2</module>
+		<module>image_renderer_2</module>
 	</modulesToEnable>
 	
 	<module>
@@ -18,7 +18,7 @@
 	</module>
 	
 	<module>
-		<name>camera_renderer</name>
+		<name>image_renderer</name>
 		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE" />
 		<config>
 			<window>GraphicsTest</window>
@@ -35,9 +35,9 @@
 	</module>
 	
 	<module>
-		<name>camera_renderer_2</name>
-		<libpath>camera_renderer</libpath>
-		<libname>camera_renderer</libname>
+		<name>image_renderer_2</name>
+		<libpath>image_renderer</libpath>
+		<libname>image_renderer</libname>
 		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE_2" />
 		<config>
 			<window>GraphicsTest_2</window>
@@ -50,8 +50,8 @@
 		<libname>graphics_test</libname>
 		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE_2" />
 		<config>
-			<width>500</width>
-			<height>500</height>
+			<width>200</width>
+			<height>200</height>
 		</config>
 	</module>
 </framework>
