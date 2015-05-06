@@ -12,6 +12,9 @@
 	
 	<module>
 		<name>gamepad_visualizer</name>
+		<config>
+			<failSafeAfterMillis>1000</failSafeAfterMillis>
+		</config>
 	</module>
 	
 	<module>
