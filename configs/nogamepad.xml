@@ -4,12 +4,12 @@
 		<clock enabled="true" unit="hz">100</clock>
 		<configMonitor>true</configMonitor>
 	</execution>
-	<modulesToEnable>
+	<modulesToEnable logLevel="ERROR">
 		<module>ogre_window_manager</module>
 		<module>graphics_test</module>
-		<module>image_renderer</module>
-		<module>graphics_test_2</module>
 		<module>image_renderer_2</module>
+		<module>graphics_test_2</module>
+		<module>image_renderer_1</module>
 	</modulesToEnable>
 	
 	<module>
@@ -18,7 +18,9 @@
 	</module>
 	
 	<module>
-		<name>image_renderer</name>
+		<name>image_renderer_1</name>
+		<realName>image_renderer</realName>
+		<writePriority>0</writePriority>
 		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE" />
 		<config>
 			<window>GraphicsTest</window>
@@ -29,29 +31,11 @@
 		<name>graphics_test</name>
 		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE" />
 		<config>
-			<width>1000</width>
-			<height>1000</height>
+			<width>500</width>
+			<height>500</height>
+			<draw>1</draw>
 		</config>
 	</module>
 	
-	<module>
-		<name>image_renderer_2</name>
-		<libpath>image_renderer</libpath>
-		<libname>image_renderer</libname>
-		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE_2" />
-		<config>
-			<window>GraphicsTest_2</window>
-		</config>
-	</module>
-	
-	<module>
-		<name>graphics_test_2</name>
-		<libpath>graphics_test</libpath>
-		<libname>graphics_test</libname>
-		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE_2" />
-		<config>
-			<width>200</width>
-			<height>200</height>
-		</config>
-	</module>
+	<include src="extra/nogamepad.xml" />
 </framework>

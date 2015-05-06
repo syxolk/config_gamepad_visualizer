@@ -7,7 +7,7 @@
 		<module>ogre_window_manager</module>
 		<module>gamepad_controller</module>
 		<module>gamepad_visualizer</module>
-		<module>camera_renderer</module>
+		<module>image_renderer</module>
 	</modulesToLoad>
 	
 	<module>
@@ -20,7 +20,7 @@
 	</module>
 	
 	<module>
-		<name>camera_renderer</name>
+		<name>image_renderer</name>
 	</module>
 	
 	<module>

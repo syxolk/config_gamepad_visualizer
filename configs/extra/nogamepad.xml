@@ -1,0 +1,18 @@
+<framework>
+	<module>
+		<name>image_renderer_2</name>
+		<realName>image_renderer</realName>
+		<writePriority>10</writePriority>
+		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE_2" />
+		<config>
+			<window>GraphicsTest</window>
+		</config>
+	</module>
+	
+	<module>
+		<name>graphics_test_2</name>
+		<realName>graphics_test</realName>
+		<channelMapping from="IMAGE" to="GRAPHICS_IMAGE_2" />
+		<config src="graphics_test.lconf" />
+	</module>
+</framework>
